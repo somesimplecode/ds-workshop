@@ -5,12 +5,12 @@
 
 int main(int argc, char* argv[])
 {
-    std::list<int> i_list;
+    std::list<int> i_List;
 
-    for(for i = 1; i < argc; ++i)
+    for(int i = 1; i < argc; ++i)
     {
         int temp = std::atoi(argv[i]);
-        i_list.push_back(temp);
+        i_List.push_back(temp);
     }
 
     std::list<int>::iterator it = i_List.begin();
@@ -22,5 +22,3 @@ int main(int argc, char* argv[])
 
     return 0;
 }
-
-#endif
